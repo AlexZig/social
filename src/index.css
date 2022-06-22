@@ -45,12 +45,14 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 body:root{
-  --color: ;
+  --colorBG: ;
+  --colorText: ;
 }
 body{
   width: 100%;
   height: 100vh;
-  background-color: var(--color);
+  background-color: var(--colorBG);
+  color: var(--colorText);
 }
 body>div{
   width: 100%;

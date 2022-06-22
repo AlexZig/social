@@ -14,7 +14,7 @@
   grid-template-rows: minmax(80px, 2fr) minmax(560px, 10fr);
 }
 .wrapper>div{
-  border: 1px solid rgba(0, 255, 255, 0.219);
+  border: 1px solid #00ffff38;
   border-radius: 6px;
   padding: 8px;
 }
