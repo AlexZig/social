@@ -1,0 +1,85 @@
+.dialog{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+    gap: 8px;
+    overflow-y: hidden;
+}
+.dialog__list{
+    flex-grow: 1;
+}
+.new-massagr input{
+    padding: 16px;
+    font-size: 16px;
+    width: 100%;
+    max-width: 80%;
+    min-width: 200px;
+    border-radius: 6px 0 0 6px;
+    border: 1px solid var(--colorText);
+    background-color: transparent;
+    color: var(--colorText);
+    transition: 0.4s;
+}
+.new-massagr input::placeholder{
+    color: var(--colorText);
+}
+.new-massagr input:focus{
+    box-shadow: 0 0 10px var(--colorText);
+}
+.new-massagr button{
+    width: 100%;
+    max-width: 20%;
+    min-width: 50px;
+    padding: 16px;
+    font-size: 16px;
+    border-radius: 0 6px 6px 0;
+    border: 1px solid var(--colorText);
+    background-color: rgb(8, 197, 255);
+    transition: 0.4s;
+    color: var(--colorText);
+}
+.new-massagr button:hover{
+    background-color: transparent;
+    color: var(--colorText);
+}
+.dialog__list{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    overflow-y: auto;
+    padding-right: 6px;
+}
+.dialog__list::-webkit-scrollbar{
+    width: 4px;
+}
+.dialog__list::-webkit-scrollbar-thumb{
+    width: 4px;
+    background-color: var(--colorText);
+    border-radius: 4px;
+}
+.dialog__item{
+    display: flex;
+    gap: 8px;
+}
+.dialog__item img{
+    width: 40px;
+    align-self: end;
+}
+.dialog__content{
+    background-color: var(--colorBG);
+    color: var(--colorText);
+    border-radius: 6px;
+    padding: 4px;
+    flex-grow: 1;
+    border: 1px solid;
+}
+.dialog__content h3{
+    font-size: 15px;
+    font-weight: bold;
+    margin-bottom: 6px;
+}
+.dialog__content p{
+    font-size: 14px;
+    line-height: 150%;
+}

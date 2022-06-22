@@ -2,7 +2,7 @@
   width: 80%;
   max-width: 1200px;
   height: 80%;
-  background-color: rgba(0, 255, 255, 0.219);
+  background-color: var(--colorBG);
   border-radius: 8px;
   display: grid;
   gap: 8px;
@@ -11,7 +11,8 @@
   'header header'
   'nav profile';
   grid-template-columns: minmax(200px, 2fr) minmax(320px, 10fr);
-  grid-template-rows: minmax(80px, 2fr) minmax(560px, 10fr);
+  grid-template-rows: minmax(80px, 2fr) minmax(460px, 10fr);
+  background-image: linear-gradient(rgb(0, 39, 122), rgb(0, 61, 63));
 }
 .wrapper>div{
   border: 1px solid #00ffff38;
@@ -26,4 +27,7 @@
 }
 .profile{
   grid-area: profile;
+}
+.main{
+  overflow-y: hidden;
 }

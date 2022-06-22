@@ -1,0 +1,8 @@
+.nav a{
+    display: block;
+    padding: 16px;
+    background-color: var(--colorBG);
+    border-radius: 6px;
+    color: var(--colorText);
+    border: 1px solid;
+}

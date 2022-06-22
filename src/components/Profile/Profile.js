@@ -16,8 +16,7 @@ function Profile() {
                     <h3>
                         My Posts
                     </h3>
-                    <input placeholder='Enter the o
-                    post'/>
+                    <input placeholder='Enter the post'/>
                     <button>Add Post</button>
                 </div>    
                 <div className='posts__list'>
