@@ -1,5 +1,5 @@
 import React from 'react';
-function DialogItem(props) {
+function MassageItem(props) {
     return ( 
         <div className='dialog__item'>
             <img src={props.profileFoto} alt='ProfilrFoto'/>
@@ -8,11 +8,11 @@ function DialogItem(props) {
                     {props.profileName}
                 </h3>
                 <p>
-                    {props.postText}
+                    {props.massageText}
                 </p>
             </div>
         </div>
      );
 }
 
-export default DialogItem;
+export default MassageItem;

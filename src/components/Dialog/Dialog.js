@@ -1,28 +1,36 @@
 import React from 'react';
 import './dialog.css'
 import profilrFoto from'../../img/profilr__foto.png'
-import DialogItem from './DialogItem/DialogItem';
-function Dialog() {
+import MassageItem from './MassageItem/MassageItem';
+import ContactItem from './ContactItem/ContacrItem';
+
+let dialogNames = [
+    {name:'Alex Zigan', id:1},
+    {name:'Leonid Cosch', id:2},
+    {name:'Билл Гейтс', id:3}
+];
+let dialogItemContent = [
+    {massageText:'Сделаем тоже самое с сообщениями.', id:1},
+    {massageText:'Им тоже присвоим id.', id:2},
+    {massageText:'Готово, полностью это все будет выглядеть вот так', id:3}
+]
+function Dialog(props) {
     return ( 
         <div className='dialog'>
-            <div className='dialog__list'>
-                <DialogItem profileFoto={profilrFoto} profileName='Alex' postText='Massage...'/>
-                <DialogItem profileFoto={profilrFoto} profileName='Alex' postText='Друзья, в день свадьбы будет организована онлайн трансляция выездной регистрации и свадебной речи. Здесь будут выложены цифры для конференции в ZOOM.
-                Выездная регистрация - 12:00. Свадебная речь - 15:00 (по местному времени.г.Барнаул). Будем рады видеть каждого из вас!❤️'/>
-                <DialogItem profileFoto={profilrFoto} profileName='Alex' postText='Друзья, в день свадьбы будет организована онлайн трансляция выездной регистрации и свадебной речи. Здесь будут выложены цифры для конференции в ZOOM.
-                Выездная регистрация - 12:00. Свадебная речь - 15:00 (по местному времени.г.Барнаул). Будем рады видеть каждого из вас!❤️'/>
-                <DialogItem profileFoto={profilrFoto} profileName='Alex' postText='Друзья, в день свадьбы будет организована онлайн трансляция выездной регистрации и свадебной речи. Здесь будут выложены цифры для конференции в ZOOM.
-                Выездная регистрация - 12:00. Свадебная речь - 15:00 (по местному времени.г.Барнаул). Будем рады видеть каждого из вас!❤️'/>
-                <DialogItem profileFoto={profilrFoto} profileName='Alex' postText='Друзья, в день свадьбы будет организована онлайн трансляция выездной регистрации и свадебной речи. Здесь будут выложены цифры для конференции в ZOOM.
-                Выездная регистрация - 12:00. Свадебная речь - 15:00 (по местному времени.г.Барнаул). Будем рады видеть каждого из вас!❤️'/>
-                <DialogItem profileFoto={profilrFoto} profileName='Alex' postText='Друзья, в день свадьбы будет организована онлайн трансляция выездной регистрации и свадебной речи. Здесь будут выложены цифры для конференции в ZOOM.
-                Выездная регистрация - 12:00. Свадебная речь - 15:00 (по местному времени.г.Барнаул). Будем рады видеть каждого из вас!❤️'/>
+            <div className='dialog__contact'>
+                {dialogNames.map((e)=><ContactItem name = {e.name} id = {e.id}/> ) }
             </div>
-            <div className='dialog__new-massagr new-massagr'>
-                <input placeholder='Enter the massage'/>
-                <button>Submit</button>
+            <div className='dialog__massage'>
+                <div className='dialog__list'>
+                    {dialogItemContent.map((e)=><MassageItem profileFoto={profilrFoto} profileName='Alex' massageText={e.massageText} id={e.id} />)}
+                </div>
+                <div className='dialog__new-massagr new-massagr'>
+                    <input placeholder='Enter the massage'/>
+                    <button>Submit</button>
+                </div>
             </div>
         </div>
+        
      );
 }
 

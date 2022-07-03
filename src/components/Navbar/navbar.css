@@ -1,0 +1,15 @@
+.nav a{
+  display: block;
+  padding: 8px;
+  color: black;
+  font-size: 18px;
+  border-radius: 6px;
+}
+.nav a:hover{
+  background-color: #03589ea6;
+  color: white;
+}
+.nav a:focus{
+  background-color: #03589E;
+  color: white;
+}

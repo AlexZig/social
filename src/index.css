@@ -36,6 +36,15 @@ img{vertical-align: top;}
 
 h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
 /*--------------------*/
+*{
+  transition: 0.4s;
+}
+body:root{
+  --colorBG: ;
+  --colorText: ;
+  --color1: ;
+  --color2: ;
+}
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -43,11 +52,9 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-image: linear-gradient(var(--color1), var(--color2));
 }
-body:root{
-  --colorBG: ;
-  --colorText: ;
-}
+
 body{
   width: 100%;
   height: 100vh;
@@ -61,4 +68,6 @@ body>div{
   align-items: center;
   justify-content: center;
 }
-
+#scrnli_recorder_root{
+  display: none;
+}

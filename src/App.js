@@ -4,9 +4,9 @@ import Nav from './components/Nav/Nav';
 import Profile from './components/Profile/Profile';
 import Dialog from './components/Dialog/Dialog';
 import './App.css';
-import {BrowserRouter, Route} from 'react-router-dom';
+import { BrowserRouter, Route } from 'react-router-dom';
 function App() {
-  return ( 
+  return (
     <div className='wrapper'>
       <BrowserRouter>
         <Header />
@@ -17,7 +17,7 @@ function App() {
         </div>
       </BrowserRouter>
     </div>
-   );
+  );
 }
 
 export default App;

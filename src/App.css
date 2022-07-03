@@ -12,10 +12,10 @@
   'nav profile';
   grid-template-columns: minmax(200px, 2fr) minmax(320px, 10fr);
   grid-template-rows: minmax(80px, 2fr) minmax(460px, 10fr);
-  background-image: linear-gradient(rgb(0, 39, 122), rgb(0, 61, 63));
+  background-image: linear-gradient(var(--color1), var(--color2));
 }
 .wrapper>div{
-  border: 1px solid #00ffff38;
+  border: 1px solid var(--colorText);
   border-radius: 6px;
   padding: 8px;
 }
